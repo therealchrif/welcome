@@ -1,0 +1,19 @@
+
+<!-- Modal Window-->
+<div class="apo-modal apo-modal-photo-info">
+  <header class="apo-modal-photo-info-header">
+    <h2 class="apo-modal-photo-info-title">{{ photoTitle }}</h2><em class="apo-photo-stream-category">{{ photoMeta }}</em>
+  </header>
+  <div class="apo-modal-photo-info-body">
+    <div class="apo-extended-info-list apo-grid apo-cols-4">{{#each photoInfo}}
+      <div class="apo-grid-col">
+        <div class="apo-extended-info-list-item">
+          <div class="apo-extended-info-list-name">{{ name }}:</div>
+          <div class="apo-extended-info-list-value">{{ value }}</div>
+        </div>
+      </div>{{/each}}
+    </div>
+  </div>
+  <div class="arctic-modal-close-container"><button type="button" class="apo-close-btn arcticmodal-close"><i class="icon icon-cross"></i> Close</button></div>
+</div>
+<!-- End Modal Window-->
